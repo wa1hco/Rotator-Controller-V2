@@ -424,6 +424,10 @@
       {
         "netclass": "Default",
         "pattern": "/26VAC"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/+5V"
       }
     ]
   },
