@@ -1,22 +1,25 @@
-#,Reference,Qty,Value,Footprint,DNP,Order page
-1,"C1, C11, C12",3,0.1 200V,Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder,,
-2,"C2, C3, C4, C5, C6, C7, C8, C9",8,0.1 2%,Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder,,
-3,C10,1,100 uFd,Capacitor_THT:C_Rect_L41.5mm_W20.0mm_P37.50mm_MKS4,,https://www.digikey.com/en/products/detail/kemet/R60DW6100AA40K/6124505
-4,"D1, D2, D9, D10",4,BAS40-04,Package_TO_SOT_SMD:SOT-23,,https://www.mouser.com/c/semiconductors/discrete-semiconductors/diodes-rectifiers/?q=bas40-04&package%20%2F%20case=SOT-23
-5,"D3, D14, D15, D16, D17, D18",6,SMAJ90CA,Diode_SMD:D_SMA,,https://www.mouser.com/c/?q=smaj90ca&sort=pricing%7C1
-6,"D4, D6, D8, D12",4,1N4148,Diode_SMD:D_SOD-123F,,https://www.mouser.com/c/semiconductors/discrete-semiconductors/diodes-rectifiers/diodes-general-purpose-power-switching/?q=1n4148&package%20%2F%20case=SOD-123F
-7,"D5, D7, D11, D13, D19",5,IR204A,LED_THT:LED_D3.0mm_IRBlack,,
-8,J1,1,USB_A,Connector_USB:USB_A_TE_292303-7_Horizontal,,https://www.mouser.com/ProductDetail/TE-Connectivity/1-292303-4?qs=vkMqrgFpRag6RnIvSE7z8w%3D%3D
-9,J2,1,26 VAC,Connector_TE-Connectivity:TE_MATE-N-LOK_1-770966-x_1x02_P4.14mm_Horizontal,,https://www.mouser.com/ProductDetail/571-1-770966-0
-10,J3,1,Rotator,Connector_TE-Connectivity:TE_MATE-N-LOK_1-770970-x_2x04_P4.14mm_Horizontal,,https://www.mouser.com/ProductDetail/571-1-770970-0
-11,"K1, K2, K3",3,G5LE-1,Relay_THT:Relay_SPDT_Omron-G5LE-1,,https://www.mouser.com/ProductDetail/Omron-Electronics/G5LE-1-E-36-DC5?qs=aEuGZpxfbxXNlH%2FaY21zdg%3D%3D
-12,"Q1, Q2, Q3",3,BSS123,Package_TO_SOT_SMD:SOT-23,,
-13,"R1, R2, R3, R10, R15",5,560,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,
-14,"R4, R5, R6, R7, R8, R9",6,27K 1%,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,
-15,"R11, R12",2,1K,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,
-16,"R13, R14",2,360,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,
-17,RV1,1,R_Potentiometer_US,Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Horizontal,,
-18,SW1,1,SW_CW,Button_Switch_THT:SW_SPST_Omron_B3F-315x_Angled,,
-19,SW2,1,SW_CCW,Button_Switch_THT:SW_SPST_Omron_B3F-315x_Angled,,
-20,U1,1,Teensy4.0,Teensy:Teensy40,,
-21,U3,1,AP2161W,Package_TO_SOT_SMD:SOT-23-5,,
+"#","Reference","Qty","Value","Footprint","DNP"
+"1","C1, C11, C12","3","0.1 200V","Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder",""
+"2","C2, C3, C4, C5, C6, C7, C8, C9","8","0.1 2%","Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder",""
+"3","D1, D2, D9, D10","4","BAS40-04","Package_TO_SOT_SMD:SOT-23",""
+"4","D3, D14, D15, D16, D17, D18","6","SMAJ90CA","Diode_SMD:D_SMA",""
+"5","D4, D6, D8, D12","4","1N4148","Diode_SMD:D_SOD-123F",""
+"6","D5","1","26VAC","LED_SMD:LED_miniPLCC_2315_Handsoldering",""
+"7","D7","1","Motor","LED_SMD:LED_miniPLCC_2315_Handsoldering",""
+"8","D13","1","Brake","LED_SMD:LED_miniPLCC_2315_Handsoldering",""
+"9","D19","1","5V","LED_SMD:LED_miniPLCC_2315_Handsoldering",""
+"10","J1","1","USB_A","Connector_USB:USB_A_TE_292303-7_Horizontal",""
+"11","J2","1","Rotator","Connector_TE-Connectivity:TE_MATE-N-LOK_1-770971-x_2x05_P4.14mm_Horizontal",""
+"12","J4","1","Motor Cap","Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical",""
+"13","K1, K2, K3","3","G5LE-1","Relay_THT:Relay_SPDT_Omron-G5LE-1",""
+"14","O1","1","~","Lightpipe:LP4-EP",""
+"15","Q1, Q2, Q3","3","BSS123","Package_TO_SOT_SMD:SOT-23",""
+"16","R1, R2, R10, R15","4","560","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",""
+"17","R4, R5, R6, R7, R8, R9","6","27K 1%","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",""
+"18","R11, R12","2","1K","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",""
+"19","R13, R14","2","360","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder",""
+"20","RV1","1","R_Potentiometer_US","Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Horizontal",""
+"21","SW1","1","SW_CW","Button_Switch_THT:SW_SPST_Omron_B3F-315x_Angled",""
+"22","SW2","1","SW_CCW","Button_Switch_THT:SW_SPST_Omron_B3F-315x_Angled",""
+"23","U1","1","Teensy4.0","Teensy:Teensy40_Simple",""
+"24","U3","1","AP2161W","Package_TO_SOT_SMD:SOT-23-5",""
