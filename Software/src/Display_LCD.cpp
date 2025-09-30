@@ -197,7 +197,7 @@ void update_lcd_display()
   // target from preset knob
   // azimuth_direction(azimuth)
 
-  if (((millis() - last_az_update) > DISPLAY_UPDATE_TIME) || (push_lcd_update))
+  if (((millis() - last_az_update) > DISPLAY_UPDATE_INTERVAL) || (push_lcd_update))
   {
     // initialization
     if ((lcd_state_row_0 == 0) && (lcd_state_row_1 == 0))
@@ -216,7 +216,7 @@ void update_lcd_display()
   }
 
   // Large Azimuth Characters
-  if ((millis()-last_az_update) > DISPLAY_UPDATE_TIME)
+  if ((millis()-last_az_update) > DISPLAY_UPDATE_INTERVAL)
   {
     if (last_azimuth != azimuth)
     {
@@ -225,7 +225,7 @@ void update_lcd_display()
       lcd_state_row_1 = LCD_HEADING;
     }
   }
-  if ((millis() - last_az_update) > DISPLAY_UPDATE_TIME) {last_lcd_update = millis();}
+  if ((millis() - last_az_update) > DISPLAY_UPDATE_INTERVAL) {last_lcd_update = millis();}
   last_direction_string = direction_string;
 } // update_big_display()
 #endif

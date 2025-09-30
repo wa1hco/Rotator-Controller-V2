@@ -43,7 +43,7 @@
 //#define FEATURE_REMOTE_UNIT_SLAVE       //uncomment this to make this unit a remote unit controlled by a host unit
 
 //#define FEATURE_LCD_DISPLAY
-#define FEATURE_HCO_BOARD_V3
+#define FEATURE_HCO_BOARD_V4
 
 #define AZIMUTH_INTERRUPT                          // use 1 msec ISR for ADC read
 

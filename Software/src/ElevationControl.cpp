@@ -27,10 +27,7 @@
 
 */
 // Arduino environment
-#include <Arduino.h>
-#include <avr/pgmspace.h>
 #include <EEPROM.h>
-#include <avr/io.h>
 
 // C++ functions
 #include <math.h> 

@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../../SO4R_Interlock_V2/Software"
 		}
 	]
 }

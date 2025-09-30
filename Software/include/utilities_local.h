@@ -38,7 +38,7 @@
 void print_help();
 void read_azimuth();
 void check_for_dirty_configuration();
-void brake_release(byte, boolean);
+void brake_release(byte, bool);
 void check_brake_release();
 
 #endif /* UTILITIES_LOCAL_H_ */

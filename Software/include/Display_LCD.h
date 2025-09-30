@@ -48,6 +48,9 @@ void loadchars();
 void printbigazimuth(int azimuth);
 void printbigchar(int digit, int col, int row, int symbol);
 
+uint32_t last_az_update;
+uint32_t last_lcd_update;
+
 //#define LCD_COLUMNS and ROWS
 #define LCD_COLUMNS            20
 #define LCD_ROWS                4

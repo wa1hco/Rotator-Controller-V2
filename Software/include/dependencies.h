@@ -34,11 +34,10 @@
 #ifndef DEPENDENCIES_H_
 #define DEPENDENCIES_H_
 
-#include "WProgram.h"
-
+#include <Arduino.h>
 #include "rotator_features.h"
 #include "settings.h"
-#include "rotator_pins_HCO_board_V2.h"
+#include "rotator_pins_HCO_board_V4.h"
 #include "StateMachine.h"
 #include "serial_command_processing.h"
 #include "Input.h"
@@ -124,7 +123,16 @@
   #define FEATURE_FIR_FILTER  
 #endif
 
-#if defined FEATURE_HCO_BOARD_V3
+#if defined FEATURE_HCO_BOARD_V3 
+// no display
+  #define FEATURE_HCO_BUTTONS
+  #define FEATURE_HCO_AZ_POSITION         // read + and - ends of pot with grounded wiper
+  #define FEATURE_HCO_ADC
+  #define FEATURE_FIR_FILTER
+#endif
+
+#if defined FEATURE_HCO_BOARD_V4
+  #define FEATURE_LCD_DISPLAY
   #define FEATURE_HCO_BUTTONS
   #define FEATURE_HCO_AZ_POSITION         // read + and - ends of pot with grounded wiper
   #define FEATURE_HCO_ADC
@@ -177,8 +185,33 @@
 #include <FIR.h>
 #endif
 
+
+// timed ISR for read ADC and FIR filter az position
 #ifdef FEATURE_HCO_AZ_POSITION
-#include <MsTimer2.h> // timed ISR for read ADC and FIR filter az position
+
+// These define's must be placed at the beginning before #include "megaAVR_TimerInterrupt.h"
+// _TIMERINTERRUPT_LOGLEVEL_ from 0 to 4
+// Don't define _TIMERINTERRUPT_LOGLEVEL_ > 0. Only for special ISR debugging only. Can hang the system.
+#define TIMER_INTERRUPT_DEBUG         0
+#define _TIMERINTERRUPT_LOGLEVEL_     0
+
+#define LOCAL_DEBUG         1
+
+// Select USING_16MHZ     == true for  16MHz to Timer TCBx => shorter timer, but better accuracy
+// Select USING_8MHZ      == true for   8MHz to Timer TCBx => shorter timer, but better accuracy
+// Select USING_250KHZ    == true for 250KHz to Timer TCBx => shorter timer, but better accuracy
+// Not select for default 250KHz to Timer TCBx => longer timer,  but worse accuracy
+#define USING_16MHZ     true
+#define USING_8MHZ      false
+#define USING_250KHZ    false
+
+#define USE_TIMER_0     false
+#define USE_TIMER_1     true
+#define USE_TIMER_2     false
+#define USE_TIMER_3     false
+
+#include "TimerInterrupt_Generic.h"
+
 #endif
 
 #ifdef FEATURE_HCO_BUTTONS

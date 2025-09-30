@@ -27,11 +27,6 @@
 
 */
 
-// Arduino environment
-#include <Arduino.h>
-#include <avr/pgmspace.h>
-#include <avr/io.h>
-
 // Project configuration
 #include "dependencies.h"
 

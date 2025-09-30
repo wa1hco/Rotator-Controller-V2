@@ -557,7 +557,7 @@ void check_brake_release()
 // Brake release on means to apply power to release the brake
 // default condition is braked, meaning brake release off
 // BRAKE_RELEASE_{on,off} defined according to controller polarity
-void brake_release(byte az_or_el, boolean brake_release)
+void brake_release(byte az_or_el, bool brake_release)
 { 
   if (az_or_el == AZ) 
   {
